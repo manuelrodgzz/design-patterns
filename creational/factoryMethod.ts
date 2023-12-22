@@ -1,3 +1,6 @@
+// Making this file a module to avoid global scope defined variables
+export {}
+
 //=============== Types, Classes and Interfaces ===============
 
 type Item = '📦' | '🚗'
