@@ -12,3 +12,5 @@ Adapter is a structural design pattern that allows objects with incompatible int
 
 - ⚡️ You could extend each subclass and put the missing functionality into new child classes. However, you’ll need to duplicate the code across all of these new classes, which smells really bad.
 The much more elegant solution would be to put the missing functionality into an adapter class. Then you would wrap objects with missing features inside the adapter, gaining needed features dynamically. For this to work, the target classes must have a common interface, and the adapter’s field should follow that interface. This approach looks very similar to the Decorator pattern.
+
+[More info](https://refactoring.guru/design-patterns/adapter)
