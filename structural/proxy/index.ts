@@ -1,3 +1,8 @@
+// Making this file a module to avoid global scope defined variables
+export {}
+
+//=============== Types, Classes and Interfaces ===============
+
 interface ThirdPartyYouTubeLib {
   listVideos(): Promise<string[]>
   getVideoInfo(id: string): Promise<string>
@@ -108,6 +113,10 @@ class YouTuberManager {
   }
 }
 
+//============================================================
+
+//=============== Functions ===============
+
 async function clientCode() {
   const youtubeService = new ThirdPartyYouTubeClass()
   const youtubeProxy = new CachedYouTubeClass(youtubeService)
@@ -123,5 +132,7 @@ async function clientCode() {
   console.log('--- Rendering video for the second time ---')
   await manager.renderVideo('asd')
 }
+
+//============================================================
 
 clientCode()
